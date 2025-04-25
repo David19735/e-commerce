@@ -1,68 +1,9 @@
-
 .bg{
+    height: 100vh;
     width: 100%;
-    height: 90vh;
-    background: url('../../public/imagenes/Bg2.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('../../public/imagenes/bg.jpg.jpg');
     background-size: cover;
-    background-attachment:fixed ;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-}
-
-
-.bg::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    height: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-}
-
-.bg_content{
-    @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-    position: absolute;
-    width: 70%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 2;
-    color: white;
-    font-family: 'Montserrat';
-    font-size: 1.4rem;
-    font-weight: 700;
-}
-
-.bg_content a{
-    background: rgba(37, 53, 197, 0.295);
-    text-decoration: none;
-    padding: 0.5rem 5rem;
-    color: white;
-    border-radius: 10px;
-    transition: all ease 0.5s;
-    display: inline-flex; /* Asegura que el icono esté bien alineado */
-}
-
-
-.bg_content a:hover{
-    background: rgba(37, 53, 197, 0.589);   
-}
-
-.bg_content a i {
-    transition: transform 0.5s ease-in-out; /* Se aplica aquí */
-    margin: 0 1rem;
-}
-
-.bg_content a:hover i{
-    color: rgb(172, 28, 28);
-    transform: rotate(360deg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 

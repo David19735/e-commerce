@@ -1,7 +1,7 @@
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Bootstrap from "@/components/Bootstrap";
-
+import Aos from "@/components/Aos";
 
 export const metadata = {
   title: "Shop",
@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+       <Aos/> 
         {children}
         <Bootstrap/> 
       </body>

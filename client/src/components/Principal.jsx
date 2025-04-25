@@ -1,16 +1,21 @@
 import React from 'react'
 import style from '@/styles/Principal.module.css';
 import Link from 'next/link';
+import Carousel from './Carousel';
+import Compras from './Compras';
+import Header from './Header';
+import JuegoPrincipal from './JuegoPrincipal';
 
 function Principal() {
   return (
     <div>
+       <Header/>
         <div className={style.bg}>
-            <div className={style.bg_content}>
-                <p>Conoce nuestras ofertas de consolas de videojuegos</p>
-                <Link href={'/'}>Mirar más <i className="bi bi-caret-right-square"></i></Link>
-            </div>
         </div>
+        <JuegoPrincipal/>
+        <Compras/>
+          <Carousel/>
+
     </div>
   )
 }

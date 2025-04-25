@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body{
-    background: rgba(0, 0, 0, 0.048) !important;
+    background: #e9e4e4 !important;
+    overflow-x: hidden;
 }

@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+.juegos{
+    min-height: 80vh;
+    width: 85%;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.juego{
+    height: 40vh;
+    position: relative;
+    cursor: pointer;
+}
+
+.juego:nth-child(1){
+    background: linear-gradient(45deg, #10214C,#DA3DBE);
+}
+
+.juego:nth-child(2){
+    background: linear-gradient(45deg, #1A2F3F,#7094CE);
+}
+
+.juego:nth-child(3){
+    background: linear-gradient(45deg, #000,#1C78B2);
+}
+
+.juego:nth-child(4){
+    background: linear-gradient(45deg, #0E2B2F,#00FFFF);
+}
+
+.juego img{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    transition: all ease 0.5s;
+}
+
+.juego:hover img{
+    right: 20%;
+    transform: translate(50%, -50%) scale(1.2);
+}
+
+.juego:nth-child(1) img{
+    width: 60%;
+}
+
+.juego:nth-child(2) img{
+    width: 35%;
+}
+
+.juego:nth-child(3) img{
+    width: 75%;
+}
+
+.juego:nth-child(4) img{
+    width: 32%;
+}
+
+
+.contenido{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    transition-duration: 0.7s;
+    opacity: 0;
+}
+
+.contenido h3{
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: white;
+    font-family: 'Roboto';
+}
+
+.contenido p{
+    font-size: 0.7rem;
+    color: rgb(189, 182, 182);
+    font-family: 'Roboto';
+}
+
+.juego:hover .contenido{
+    left: -20%;
+    transform: translate(50%,-50%);
+    opacity: 1;
+}
